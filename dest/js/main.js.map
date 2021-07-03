@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.ts"],"names":[],"mappings":"AAAA,IAAM,IAAI,GAAW,cAAc,CAAC;AACpC,OAAO,CAAC,GAAG,CAAC,IAAI,CAAC,CAAA","file":"main.js","sourcesContent":["const test: string = \"hello world!\";\nconsole.log(test)"]}
