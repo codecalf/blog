@@ -42,7 +42,6 @@ function script(done) {
         .pipe(ts())
         .pipe(sourcemaps.write(""))
         .pipe(gulp.dest(`${dest_path}/js`))
-        .pipe(done());
 }
 
 function html(done) {
@@ -57,7 +56,6 @@ function html(done) {
             sortAttributes: true,
             sortClassName: true}))
         .pipe(gulp.dest(`${dest_path}`))
-        .pipe(done());
 }
 
 function reload(done) {
@@ -73,8 +71,8 @@ function watch() {
         }
     })
 
-    gulp.watch(`${src_path}/sass/main.sass`, css);
-    gulp.watch(`${src_path}/ts/*.ts`, gulp.series(script, reload));
+    gulp.watch(`${src_path}/sass/**/*.sass`, css);
+    gulp.watch(`${src_path}/ts/**/*.ts`, gulp.series(script, reload));
     gulp.watch(`${src_path}/*.html`, gulp.series(html, reload));
 }
 

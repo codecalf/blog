@@ -6,15 +6,21 @@
     grid-gap: 1rem
     grid-template-rows: auto
 
+    
+.content-grid-first-column
+    grid-column: 1 / 2
+
+.content-grid-second-column
+    grid-column: 2 / 3
+
+.content-grid-full-width
+    grid-column: 1 / 3
+
+.content-grid-first-row
+    grid-row: 1 / 2
+
 @media screen and ( max-width: 770px )
     .content-grid-container
         grid-template-columns: 2fr
-    
-.content-grid.first-column
-    grid-column: 1 / 2
-
-.content-grid.second-column
-    grid-column: 2 / 3
-
-.content-grid.full-width
-    grid-column: 1 / 3
+    .content-grid-second-column
+        grid-column: 1 / 2
