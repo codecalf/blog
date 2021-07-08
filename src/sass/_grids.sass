@@ -6,17 +6,24 @@
     grid-gap: 1rem
     grid-template-rows: auto
 
+.tile-grid-container
+    display: grid
+    width: 85vw
+    max-width: 50rem
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 1rem
+    grid-template-rows: auto
     
-.content-grid-first-column
+.first-column
     grid-column: 1 / 2
 
-.content-grid-second-column
+.second-column
     grid-column: 2 / 3
 
-.content-grid-full-width
+.first-two-columns 
     grid-column: 1 / 3
 
-.content-grid-first-row
+.first-row
     grid-row: 1 / 2
 
 @media screen and ( max-width: 770px )
