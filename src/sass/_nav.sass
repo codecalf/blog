@@ -35,6 +35,9 @@ ul li a:hover::after
     transform: translateY(-.4rem)
     transition: opacity 180ms cubic-bezier(0.0, 0.0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0.0, 1, 1) 
 
+ul li a.no-hover::after
+    display: none
+
 ul li a:active
     color: $color-2
 
