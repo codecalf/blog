@@ -77,5 +77,7 @@ function watch() {
 }
 
 
-
+exports.css = css;
+exports.ts = script;
+exports.html = html;
 exports.default = watch
